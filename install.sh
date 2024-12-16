@@ -2,7 +2,7 @@
 
 rm -rf $(pwd)/$0
 
-read -p " ingresa tu dominio: " domain
+read -p " input your domain: " domain
 
 apt update -y; apt upgrade -y; apt install git -y
 
@@ -10,7 +10,7 @@ git clone https://github.com/rudi9999/UDPMOD.git
 
 dir=$(pwd)
 
-OBFS=$(head /dev/urandom | tr -dc 'a-zA-Z0-9' | head -c 8)
+OBFS=$n4udp
 
 interfas=$(ip -4 route ls|grep default|grep -Po '(?<=dev )(\S+)'|head -1)
 
