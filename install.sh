@@ -10,7 +10,7 @@ git clone https://github.com/rudi9999/UDPMOD.git
 
 dir=$(pwd)
 
-OBFS=$n4udp
+OBFS=$(n4udp)
 
 interfas=$(ip -4 route ls|grep default|grep -Po '(?<=dev )(\S+)'|head -1)
 
