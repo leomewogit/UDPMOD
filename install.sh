@@ -6,7 +6,7 @@ read -p " input your domain: " domain
 
 apt update -y; apt upgrade -y; apt install git -y
 
-git clone https://github.com/rudi9999/UDPMOD.git
+git clone https://github.com/leomewogit/UDPMOD.git
 
 dir=$(pwd)
 
